@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 const parent = React.createElement('div', {id: 'parent'}, [
   React.createElement('div', {id: 'child1'}, 
   [
-    React.createElement('h1', {}, "This is Namaste React 🤖"),
+    React.createElement('h1', {id:'heading'}, "This is Namaste React 🤖"),
     React.createElement('h2', {}, "I'm h2 tag")
   ]),
     React.createElement('div', {id: 'child2'}, [

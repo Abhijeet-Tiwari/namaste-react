@@ -2,7 +2,6 @@
   "name": "assignment-02--ignite-our-app",
   "version": "1.0.0",
   "description": "A small react project by Abhijeet Kumar",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
