@@ -1,0 +1,14 @@
+{
+  "name": "assignment-02--ignite-our-app",
+  "version": "1.0.0",
+  "description": "A small react project by Abhijeet Kumar",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Abhijeet Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
