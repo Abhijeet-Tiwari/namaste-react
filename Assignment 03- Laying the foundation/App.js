@@ -1,19 +1,24 @@
 import React  from 'react';
 import ReactDOM from 'react-dom/client';
 
-const parent = React.createElement('div', {id: 'parent'}, [
-  React.createElement('div', {id: 'child1'}, 
-  [
-    React.createElement('h1', {id:'heading'}, "This is Namaste React 🤖"),
-    React.createElement('h2', {}, "I'm h2 tag")
-  ]),
-    React.createElement('div', {id: 'child2'}, [
-      React.createElement('h1', {}, "I'm h1 tag"),
-      React.createElement('h2', {}, "I'm h2 tag")])]
-)
+// React.createElement  ==> Object ==> HTMLElement(When rendered) 
+// Creating Element using Core React!
+// const heading = React.createElement("h1", {id: "heading"}, "This is Abhijeet🫣")
 
-console.log(parent);
+console.log(heading);
+
+// JSX - HTML-like or XML Syntax but not HTML or XML. JSX is JSX
+// Creating Element using JSX!
+
+// JSX (transpiled before it reaches JavaScript Engine) - PARCEL - Babel
+
+// JSX is then transpiled by babel to React.createElement => ReactElement(JS Object)
+
+const jsxHeader = <h1 id="heading">H1 tag using JSX!</h1>
+
+
+console.log(jsxHeader);
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent); 
+root.render(jsxHeader); 
 
 
