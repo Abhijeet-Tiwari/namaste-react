@@ -14,9 +14,9 @@ import ReactDOM from 'react-dom/client';
 
 // JSX is then transpiled by babel to React.createElement => ReactElement(JS Object)
 
-/* const jsxHeader = (<h1 id="heading" 
+const jsxHeader = (<h1 id="heading" 
 className='head' 
-tabIndex={1}>H1 tag using JSX!</h1>) */
+tabIndex={1}>H1 tag using JSX!</h1>) 
 
 // React Component
 // Class Based Component - OLD
@@ -28,9 +28,14 @@ const Title = () => (<h1 id="heading"
 className='head' 
 tabIndex={1}>H1 tag using JSX!</h1>)
 
+const value = `The multiplication of 2 * Math.PI is ${2*Math.PI}`
+
 // Component Composition - Putting components together
 const HeadingComponent = () => (
   <div id='parent'>
+    {jsxHeader}
+    <h2>{value}</h2>
+    {Title()}
     <Title></Title>
     <h1 id="heading">Functional Component</h1>
   </div>
